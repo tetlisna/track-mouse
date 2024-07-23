@@ -1,5 +1,8 @@
-$primary-color: #333;
-$secondary-color: #fff;
+$primary-color: #013a20;
+$secondary-color: #478c5c;
+$lint-color: #bacc81;
+$lint-light: #cdd193;
+$white-color: #fff;
 $padding: 1rem;
 $max-width: 700px;
 $margin-bottom: 3rem;
@@ -20,6 +23,15 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+input {
+  text-decoration: none;
 }
 
 :before,

@@ -1,13 +1,14 @@
 {
   "name": "track-mouse",
   "version": "0.0.0",
+  "homepage": "https://tetlisna.github.io/track-mouse/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href https://tetlisna.github.io/angl-pass/",
+    "deploy": "ng deploy --base-href https://tetlisna.github.io/track-mouse/",
     "prepare": "husky",
     "test": "ng test"
   },

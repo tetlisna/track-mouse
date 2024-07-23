@@ -21,7 +21,7 @@ export class MouseTrackerComponent {
   constructor() {
     fromEvent<MouseEvent>(document, 'mousemove')
       .pipe(
-        throttleTime(100),
+        throttleTime(1000),
         map((event: MouseEvent) => ({ x: event.clientX, y: event.clientY })),
         distinctUntilChanged(
           (prev, curr) => prev.x === curr.x && prev.y === curr.y

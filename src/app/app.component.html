@@ -1,6 +1,13 @@
 <main class="main">
   <div class="content">
-    <button (click)="toggleTracking()">Toggle Tracking</button>
+    <div class="container">
+      <input
+        type="checkbox"
+        id="toggle-btn"
+        class="toggle-btn"
+        (change)="toggleTracking()" />
+      <label for="toggle-btn" class="text-btn">Toggle Button</label>
+    </div>
     <app-mouse-tracker
       (coordinates)="updateCoordinates($event)"></app-mouse-tracker>
     <p>X: {{ x }} Y: {{ y }}</p>

@@ -1,0 +1,56 @@
+@import '../styles.scss';
+
+.toggle-btn {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  margin: 0;
+  border: 1px solid $lint-color;
+  border-radius: 30px;
+  background: $secondary-color;
+  color: $white-color;
+  padding: 12px 20px;
+  font-size: 1rem;
+  appearance: none;
+
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+
+  &:hover {
+    background: $lint-color;
+  }
+
+  &:after {
+    content: '';
+
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 1.5px;
+
+    width: 45px;
+    height: 45px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+
+    transform: translateX(0);
+  }
+
+  &:checked::after {
+    transform: translateX(calc(100% + 3px));
+    background-color: $secondary-color;
+  }
+
+  &:checked {
+    background-color: $primary-color;
+  }
+}
+
+.text-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
